@@ -5,3 +5,4 @@ public class GitTest {
 		System.out.println("GitHubTest/ hello, github");
 	}
 }
+//	이 내용은 github test를 하기 위한 내용이다.
