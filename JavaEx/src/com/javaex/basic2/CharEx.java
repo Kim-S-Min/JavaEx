@@ -1,4 +1,4 @@
-package com.javaex.basic.types;
+package com.javaex.basic2;
 
 //	char(2byte)
 //	�����ڵ� ĳ���� 1����
