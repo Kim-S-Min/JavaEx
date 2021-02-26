@@ -26,8 +26,9 @@ public class OperEx {
 		
 		String message = socre >= 80 ? "Good" : socre > 50 ? "Pass": "Fail";
 		System.out.println("score:" + socre + ", Result:" + message);
+		
+		
 	}
-	
 	//	비트 시프트 연산자
 	//	비트단위로 이동
 	private static void bitShiftEx() {
