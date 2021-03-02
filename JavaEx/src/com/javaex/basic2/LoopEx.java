@@ -15,6 +15,7 @@ public class LoopEx {
 		//	nestedForStar();
 		sixRandom();
 		
+		
 	}
 	private static void sixRandom() {	//	1~45 정수난수 6개를 출력
 		for (int i = 1; i <= 6; i++) {
