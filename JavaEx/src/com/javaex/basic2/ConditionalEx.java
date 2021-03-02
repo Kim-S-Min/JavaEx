@@ -9,7 +9,7 @@ public class ConditionalEx {
 	//	switchEx();	//	연습문제
 	//	switchEx2();	//	연습문제
 	//	switchEx3();	//	연습문제
-	ifPractice02();
+	//	ifPractice02();
 		
 	}
 	//	연습문제	//	점수를 입력받아 입력된 수가 3의 배수인지 판별하는 프로그램을 작성하시오

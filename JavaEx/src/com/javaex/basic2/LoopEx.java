@@ -11,9 +11,9 @@ public class LoopEx {
 		//	forGugu();
 		//	continueEx();
 		//	breakEx();
-		//	nestedFor();
+		nestedFor();
 		//	nestedForStar();
-		sixRandom();
+		//	sixRandom();
 		
 		
 	}
@@ -30,7 +30,7 @@ public class LoopEx {
 		
 		for (int row = 1; row <= rowCount; row++) {
 			for (int col = 1; col <= row; col++) {
-				System.out.println("*");
+				System.out.print("*");
 			}
 			System.out.println();	//	개행
 		}

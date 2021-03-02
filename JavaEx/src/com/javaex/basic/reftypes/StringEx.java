@@ -3,7 +3,8 @@ package com.javaex.basic.reftypes;
 public class StringEx {
 	public static void main(String[] args) {
 		//	stringTest();
-		stringFormatEx();
+		//	stringFormatEx();
+		
 		
 	}
 	private static void stringFormatEx() {	//	format문자열로 행하나를 좀더 깔끔하고 명확하게 작성할 수 있다.
