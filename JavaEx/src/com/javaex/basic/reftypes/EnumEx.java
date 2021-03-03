@@ -26,7 +26,7 @@ public class EnumEx {
 			message = "주말";
 			break;
 		default:
-			message : "?" ;	
+			message = "?" ;	
 		}
 		System.out.printf("%s에는 %s%n", today.name(), message);
 		
@@ -38,7 +38,7 @@ public class EnumEx {
 		System.out.printf("Today is %s(%d)%n", today.name(),
 				today.ordinal());
 		
-		Week other = Week.values("FRIDAY");
+		Week other = Week.valueOf("FRIDAY");
 		System.out.printf("other is %s(%d)%n", other.name(),
 				other.ordinal());
 		

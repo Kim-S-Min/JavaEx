@@ -31,9 +31,18 @@ public class Problem03 {
 				System.out.print("  ");
 			} while (g++ < 9);
 			System.out.println();
-			
-			
-		}while (h++ < 9);
+		 }while (h++ < 9);
+		 
+		 for (int num = 1; num <= 9; num++) {
+			 for (int dan = 2; dan <= 9; dan++) {
+				 System.out.printf("%d*%d=%d\t", dan, num, dan * num);
+				 
+				 
+			 }
+			 System.out.println();
+			 
+			 
+		 }
 	}
 	
 	
