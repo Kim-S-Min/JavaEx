@@ -7,7 +7,7 @@ public class Point {
 	protected int x;
 	protected int y;
 	
-	
+	//	생성자가 하나도 없으면 컴파일러가 기본 생성자를 추가한다
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;

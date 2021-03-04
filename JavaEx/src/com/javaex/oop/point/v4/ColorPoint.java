@@ -34,6 +34,7 @@ public class ColorPoint extends Point {
 	public void draw() {
 		System.out.printf("색깔점[x=%d, y=%d, 색상=%s]을 그렸습니다. %n",
 				x, y, color);
+		//	오버드라이드가 되어도 부모의 메서드는 남아있고 부모의 메서드를 호출한다
 //		System.out.println("색깔점[x=%d, y=%d, 색상=%s]을 그렸습니다. %n",
 //				x, y, color);	//	private x, y는 본인들만 사용이 가능하기때문에 오류가 난다
 	}
