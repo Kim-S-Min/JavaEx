@@ -1,24 +1,24 @@
 package com.javaex.basic2;
 
-//	상수에 대한 연습
-//	변경이 불가능하며 상수를 사용하는 문자들은 모두 대문자를 이용해야 한다.
+//	상수: 변하지 않는 수
+//	선언, 초기화, 조회는 가능, 변경 불가
 public class ConstantEx {
-	static final int SPEED_LIMIT = 100;	//	속도제한을 120으로 설정
+	static final int SPEED_LIMIT = 100;	//	상수
 	
 	public static void main(String[] args) {
-		//	final int SPEED_LIMIT = 120;	//	final -> 변경불가능한 상수를 지정함		
-		//	��� �������
-		//	1.�ڵ��� �������� ���δ�
-		//	2.����Ұ� -> �ڵ��� ������ Ȯ��
+		//	final int SPEED_LIMIT = 120;	//	final -> 할당 이후에 변경 불가		
+		//	상수 사용 이유
+		//	1.코드의 가독성을 높인다
+		//	변경 불가 -> 코드의 안정성 확보
 		int speed = 120;
 		
 		boolean b1 = speed > SPEED_LIMIT;
 		
-		System.out.println("당신의 제한속도를 넘었습니까?" + b1);
+		System.out.println("제한속도를 초과하였습니까?" + b1);
 		
-		System.out.println("현재 제한속도는" + SPEED_LIMIT + "입니다.");
+		System.out.println("제한속도는" + SPEED_LIMIT + "입니다.");
 		
-		//	SPEED_LIMIT = 100;	//	ó�������� ����� ������ �� ����.
+		//	SPEED_LIMIT = 100;	//	상수 변경 불가
 		
 	}
 }
