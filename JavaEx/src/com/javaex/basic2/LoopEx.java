@@ -11,7 +11,7 @@ public class LoopEx {
 		//	forGugu();
 		//	continueEx();
 		//	breakEx();
-		nestedFor();
+		//	nestedFor();
 		//	nestedForStar();
 		//	sixRandom();
 		
