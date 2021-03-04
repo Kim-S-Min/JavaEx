@@ -29,7 +29,10 @@ public class StaticEx {
 	
 	//	소멸자
 	@Override
-	protected void finalize() throws Throws {
+	protected void finalize() throws Throwable {
+		refcount--;
+		System.out.println("소멸자 호출");
+		super.finalize();
 		
 	}
 }
