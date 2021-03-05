@@ -31,6 +31,7 @@ public class SummaryApp {
 		//	루프
 		for (KungfuSkill member : dojang) {
 			member.kungfu();
+			
 		}
 	}
 	
