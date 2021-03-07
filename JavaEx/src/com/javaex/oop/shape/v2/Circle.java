@@ -3,12 +3,12 @@ package com.javaex.oop.shape.v2;
 
 public class Circle extends Shape implements Drawable {	//	에러가 난다면 생성자 or 추상메서드 미구현 일 가능성이 있다
 	//	필드
-	private double redius;
+	private double radius;
 	
 	//	생성자
 	public Circle(int x,int y, double redius) {
 		super(x, y);
-		this.reidus = redius;
+		this.radius = radius;
 		
 		
 	}
@@ -17,8 +17,8 @@ public class Circle extends Shape implements Drawable {	//	에러가 난다면 �
 	@Override
 	public void draw() {
 		System.out.printf(
-				"원[x=%d, y=%d, r=%f, area=%f]을 그렸습니다. %n,"
-				x, y, redius, area());
+				"원[x=%d, y=%d, r=%f, area=%f]을 그렸습니다. %n,",
+				x, y, radius, area());
 		
 		
 	}
@@ -27,7 +27,7 @@ public class Circle extends Shape implements Drawable {	//	에러가 난다면 �
 	public double area() {
 	//	double area = Math.PI * Math.pow(radius, 2);
 	//	return 0;
-		return Math.PI * Math.pow(redius, 2);
+		return Math.PI * Math.pow(radius, 2);
 	}
 	
 }
