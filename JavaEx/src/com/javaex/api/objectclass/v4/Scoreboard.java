@@ -22,7 +22,7 @@ public class Scoreboard implements Cloneable {
 
 	@Override
 	public String toString() {
-		return "Scoreboard [scores=" + ArraysEx.toString(scores) + "]";
+		return "Scoreboard [scores=" + Arrays.toString(scores) + "]";
 	}
 
 	public Scoreboard getClone() {
@@ -44,7 +44,7 @@ public class Scoreboard implements Cloneable {
 		//	먼저 얕은 복제를 시도
 		Scoreboard clone = (Scoreboard)super.clone();
 		//	내부 참조 필드 복제 (깊은 복제) 
-		clone.scores = ArraysEx.copyOf(scores, scores.length);
+		clone.scores = Arrays.copyOf(scores, scores.length);
 		return clone;
 	}
 
