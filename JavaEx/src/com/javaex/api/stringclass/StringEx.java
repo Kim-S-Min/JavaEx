@@ -4,7 +4,37 @@ package com.javaex.api.stringclass;
 public class StringEx {
 	public static void main(String[] args) {
 		//	StringBasic();
-		usefulMethods();
+		//	usefulMethods();
+		stringBufferEx();
+		
+	}
+	private static void stringBufferEx() {
+		//	String이 불변 객체, StringBuffer는 가변 객체(내부 데이터를 변경할 수 있다)
+		StringBuffer sb = new StringBuffer("This");
+		
+		//	문자열을 뒤에 추가하기 : append	//	this뒤에 원하는 내용을 출력할 수 있다
+		sb.append(" is pencil");
+		
+		//	문자열 삽입 : insert	//	문자열 중간에 원하는 내용을 넣을 수 있다
+		sb.insert(8,  "my");
+		
+		//	문자열 치환 : replace
+		sb.replace(8, 10, "your  ");	//	뒤로 스페이스바를 넣어야 your 에서 띄어지고 pencil이 출력된다
+		
+		System.out.println("최종 문자열: " + sb);
+		
+		//	버퍼 길이 변경 : setLength	//	버퍼의 길이를 조정해 출력내용을 정할 수 있다
+		sb.setLength(10);
+		System.out.println("버퍼 조정: " + sb);
+		
+		//	메서드 체이닝 기법	//	자바를 사용할때 고급비법으로 많이 사용하니 주의하자
+		String s = new StringBuffer("this")
+						.append(" is pencil")	//	스페이스바 유무에 따라서 출력이 오류가 날 수 있다
+						.insert(8, "my")
+						.replace(8, 10, "your ")
+						.toString();
+		System.out.println("메서드 체이닝: " + s);
+		
 		
 	}
 	private static void usefulMethods() {
