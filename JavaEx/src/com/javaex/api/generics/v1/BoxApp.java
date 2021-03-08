@@ -25,7 +25,7 @@ public class BoxApp {
 		//	내용물 확인
 		//	내부 데이터가 Object여서 Java 컴파일러가 체크가 힘들어진다
 		//	데이터를 불러올 때, 캐스팅 필요 -> 불편하고 위험하다
-		Integer retVal2= objBox.getContent();
+		Integer retVal2= (Integer)objBox.getContent();
 	}
 
 }
