@@ -60,7 +60,7 @@ public class VectorEx {
 		Enumeration<Integer> e = v.elements();
 		
 		while (e.hasMoreElements()) {	//	뒤에 담긴 객체가 더 있는지 물어보는것
-			Integer item = e.nextElement();
+			Integer item = e.nextElement();	//	데이터를 꺼내고, 뒤로 이동
 			System.out.print(item + " ");	
 		}
 		System.out.println();

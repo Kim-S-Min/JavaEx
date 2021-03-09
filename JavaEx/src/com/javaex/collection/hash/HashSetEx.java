@@ -2,10 +2,11 @@ package com.javaex.collection.hash;
 
 
 import java.util.HashSet;
+import java.util.Iterator;
 public class HashSetEx {
 	public static void main(String[] args) {
-		//	basicHashSetEx();
-		customHashSetEx();
+		basicHashSetEx();
+		//	customHashSetEx();
 		
 		
 	}
@@ -57,6 +58,13 @@ public class HashSetEx {
 		
 		System.out.println("HashSet: " + hs);
 		
+		
+		//	반복자 활용
+		Iterator<String> it = map.keySet().iterator();
+		while (it.equals(hasNext()) {
+			ClassRoom item = map.get(it.net());
+			System.out.println(item);
+		}
 		//	요소의 삭제
 		hs.remove("C++");
 		System.out.println("HashSet: " + hs);

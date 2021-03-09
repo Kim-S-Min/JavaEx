@@ -28,6 +28,17 @@ public class HashtableEx {
 		//	특정 키가 포함되어 있는가?
 		System.out.println("MAP has 202 Key ? " + map.containsKey("202"));	//	(*중요 다시한번 내용들을 정리해보자
 		
+		//	특정 값을 가지고 있는가? -> subject가 Java인 객체가 있는가
+		System.out.println("map has subject Java ? " + 
+				map.containsValue(new ClassRoom("Java")));
+		
+		//	삭제
+		map.remove("202");
+		System.out.println("MAP: " + map);
+		//	비워봅시다
+		map.clear();
+		System.out.println("MAP: " + map);
+		
 		
 	}
 }
