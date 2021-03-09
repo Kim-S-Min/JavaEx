@@ -40,7 +40,7 @@ public class ExceptionEx {
 			e.printStackTrace();
 		} finally {
 			System.out.println("예외 처리 완료!");
-		}
+		} 
 		
 		
 	}
