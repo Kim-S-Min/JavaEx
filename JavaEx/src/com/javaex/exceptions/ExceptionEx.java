@@ -27,10 +27,19 @@ public class ExceptionEx {
 		try {
 //		except.executRunTime();
 			except.divide(100, 0);
+		} catch (CustomArithmeticException e) {
+			System.err.println("메시지: " + e.getMessage());
+			System.err.println("나누어지는 수: " + e.getNum1());
+			System.err.println("나누는 수: " + e.getNum2());
 		} catch (RuntimeException e) {
 			//	호출된 메서드 내에서 발생한 예외를 이곳에서 위임 처리
 			System.err.println("호출된 메서드에서 unchecked예외가 발생!");
 			System.err.println("메세지: " + e.getMessage());
+		} catch (Exception e) {
+			//	남아있을 수 있는 예외를 위해 마지막은 Exception catch
+			e.printStackTrace();
+		} finally {
+			System.out.println("예외 처리 완료!");
 		}
 		
 		

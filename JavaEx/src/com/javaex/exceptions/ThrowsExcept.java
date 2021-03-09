@@ -19,6 +19,14 @@ public class ThrowsExcept {
 		
 	}
 	public double divide(int num1, int num2) {
-		return num1 / num2;
+		double result;
+		try {
+			result = num1 / num2;
+		} catch (ArithmeticException e) {
+			//	예외 전환: 보다 구체적인 예외로 전화하는 것
+			throw new CustomArithmeticException("사용자 정의 Exception", num1, num2);
+		}
+		return result;
+//		return num1 / num2;
 	}
 }
