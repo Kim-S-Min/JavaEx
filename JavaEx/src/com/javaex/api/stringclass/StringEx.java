@@ -3,9 +3,9 @@ package com.javaex.api.stringclass;
 	//	String class
 public class StringEx {
 	public static void main(String[] args) {
-		//	StringBasic();
+		StringBasic();
 		//	usefulMethods();
-		stringBufferEx();
+		//	stringBufferEx();
 		
 	}
 	private static void stringBufferEx() {
