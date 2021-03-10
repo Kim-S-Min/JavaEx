@@ -9,6 +9,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+
 public class BufferedStreamEx {
 	static final String rootPath = System.getProperty("user.dir") + "\\files\\";
 	static final String source = rootPath + "img.jpg";
@@ -16,8 +17,8 @@ public class BufferedStreamEx {
 	
 	public static void main(String[] args) {
 		//	main stream
-		InputStream = null;	//	왜 input, output 이 오류가 나는가
-		OutputStream = null;
+		InputStream is = null;	//	왜 input, output 이 오류가 나는가
+		OutputStream os = null;
 		
 		//	보조스트림 : 부가기능추가
 		BufferedInputStream bis = null;
